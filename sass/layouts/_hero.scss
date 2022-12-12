@@ -1,6 +1,6 @@
 .hero {
   background: var(--background-gray);
-  padding: 118px 60px;
+  padding: 118px 0;
   max-width: 1600px;
   height: 400px;
   
@@ -72,7 +72,8 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   position: relative;
   overflow: hidden;
   display: inline-flex;
-  min-width: 200px;
+  width: 100%;
+  max-width: 200px;
   margin: 0 auto;
   transition: background-color var(--timing);
 

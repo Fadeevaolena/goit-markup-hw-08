@@ -132,9 +132,6 @@
 }
 
 .submit__input {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   width: 100%;
   height: 50px;
   border-radius: 4px;
@@ -159,7 +156,7 @@
     color: rgba(255, 255, 255, 0.6);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     width: 450px;
   }
 

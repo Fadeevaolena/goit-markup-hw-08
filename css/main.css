@@ -652,7 +652,7 @@ body {
 
 .hero {
   background: var(--background-gray);
-  padding: 118px 60px;
+  padding: 118px 0;
   max-width: 1600px;
   height: 400px;
   margin-left: auto;
@@ -733,7 +733,8 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  min-width: 200px;
+  width: 100%;
+  max-width: 200px;
   margin: 0 auto;
   -webkit-transition: background-color var(--timing);
   transition: background-color var(--timing);
@@ -1272,7 +1273,7 @@ body {
 .submit__input:not(:placeholder-shown) {
   color: rgba(255, 255, 255, 0.6);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .submit__input {
     width: 450px;
   }
