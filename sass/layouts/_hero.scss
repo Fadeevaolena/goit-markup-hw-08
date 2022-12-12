@@ -1,0 +1,114 @@
+.hero {
+  background: var(--background-gray);
+  padding: 118px 60px;
+  max-width: 1600px;
+  height: 400px;
+  
+    margin-left: auto;
+    margin-right: auto;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero_mob.jpg);
+    
+  background-position: center;
+  background-size: cover;
+@media screen and (min-width: 480px){
+ 
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero_tab.jpg);
+}
+@media screen and (min-width: 768px) {
+background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero_img.jpg);
+}
+
+  @media screen and (min-width: 1200px){
+    padding: 200px 0;
+    height: 600px;
+    
+}}
+
+.hero--container {
+  // padding-left: 15px;
+  // padding-right: 15px;
+    margin: 0 auto;
+  text-align: center;
+ 
+
+ 
+  @media screen and (min-width: 480px) {
+      max-width: 480px;
+    }
+        @media screen and (min-width: 768px) {
+          max-width: 768px;
+        }
+                 @media screen and (min-width: 1200px) {
+                   max-width: 1200px;
+                 }
+}
+
+.hero__titel {
+  @include font(900, 26, 1.6154, 0.06);
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  color: var(--titel-white);
+
+  @media screen and (min-width: 480px) and (max-width: 1199px){
+  width: 360px;
+  }
+  
+
+  @media screen and (min-width: 1200px) {
+    @include font(900, 44, 1.3636, 0.06);
+    margin-bottom: 40px;
+    width: 696px;
+
+    
+  }
+}
+
+.hero__btn {
+  @extend %btn-primary;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  min-width: 200px;
+  margin: 0 auto;
+  transition: background-color var(--timing);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background-image: url(../images/envelope_bnt.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform var(--timing);
+  }
+  &:hover:before {
+    transform: translateY(-40px);
+  }
+  &:after {
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/phone_btn.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    transform: translateY(calc(-50% + 40px));
+    transition: transform var(--timing);
+  }
+  &:hover:after {
+    transform: translateY(-50%);
+  }
+}

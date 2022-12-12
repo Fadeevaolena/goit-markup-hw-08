@@ -1,0 +1,60 @@
+.team {
+  background: var(--background-light-gray);
+  @extend %section;
+}
+
+.team--container{
+  @extend %container;
+}
+
+.team__titel { 
+      @include font(null, 28, 1.172);
+      text-align: center;
+      color: var(--first-gray);
+      margin-bottom: 30px;
+
+
+  @media screen and (min-width: 1200px) {
+    @include font(null, 36, 1.166);
+    text-align: center;
+    color: var(--first-gray);
+    margin-bottom: 50px;
+    }
+  }
+
+.team__list {
+  @extend %list;
+  flex-wrap: wrap;
+}
+
+.team__item {
+  max-width: 100%;
+  @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+  
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 90px) / 4);
+    }
+}
+
+.team__card {
+  padding: 30px 0;
+  background-color: var(--background-white);
+  box-shadow: var(--team-shadow);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__uptitel {
+  @include font(500, 16, 1.1875);
+  text-align: center;
+  color: var(--first-gray);
+  margin-bottom: 10px;
+}
+
+.team__text {
+  @include font(null, 16, 1.1875);
+  text-align: center;
+  color: var(--gray-light);
+  margin-bottom: 16px;
+}

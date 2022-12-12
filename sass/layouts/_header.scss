@@ -1,0 +1,112 @@
+.header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-list {
+  display: flex;
+  margin-right: auto;
+  gap: 50px;
+}
+
+.header__contact-list {
+  display: flex;
+  margin-left: auto;
+  gap: 50px;
+}
+
+.header__logo {
+  @include font(700, 26, 1.1923);
+    padding-top: 24px;
+    padding-bottom: 25px;
+    font-family: var(--font-Ral);
+  color: #000000;
+  margin-right: 93px;
+}
+
+.logo-text {
+  color: var(--effect-color);
+}
+
+.nav-list__link {
+  @extend %link;
+  position: relative;
+  color: var(--first-gray);
+  transition: color var(--timing);
+
+  &:hover,
+  &:focus {
+    color: var(--effect-color);
+  }
+}
+
+.nav-list__link--current {
+  color: var(--effect-color);
+
+  &::after {
+    @extend %after;
+    position: absolute;
+    background: var(--effect-color);
+  }
+}
+
+.nav-list__link {
+  &:not(.nav-list__link--current)::after {
+    @extend %after;
+    position: absolute;
+    display: inline-block;
+    background: var(--effect-color);
+    transform: scaleX(0);
+    transition: transform var(--timing);
+    transform-origin: left;
+  }
+
+  &:hover,
+  &:focus {
+    &:after {
+      transform: scaleX(1);
+    }
+  }
+}
+
+.contact-list__link {
+  @extend %link;
+  position: relative;
+  color: var(--gray-light);
+  display: flex;
+  align-items: center;
+  transition: color var(--timing);
+  &:hover,
+  &:focus {
+    color: var(--effect-color);
+  }
+  &:after {
+    @extend %after;
+    position: absolute;
+    display: inline-block;
+    background: var(--effect-color);
+    transform: scaleX(0);
+    transition: transform var(--timing);
+    transform-origin: left;
+  }
+  &:hover,
+  &:focus {
+    &:after {
+      transform: scaleX(1);
+    }
+  }
+}
+
+.contact-list__icon {
+  margin-right: 10px;
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    color: var(--effect-color);
+  }
+}

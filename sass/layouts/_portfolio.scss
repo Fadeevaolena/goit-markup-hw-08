@@ -1,0 +1,29 @@
+.menu {
+  @extend %wlex-cent;
+}
+
+.gallery__menu {
+  margin-bottom: 50px;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.menu__btn {
+  @include font(500, 16, 1.625);
+  padding: 6px 22px;
+  color: var(--first-gray);
+  background: var(--background-light-gray);
+  border-radius: 4px;
+  transition: transform var(--timing), color var(--timing), background-color var(--timing),
+    box-shadow var(--timing);
+
+  &:hover,
+  &:focus {
+    color: var(--titel-white);
+    background-color: var(--effect-color);
+    box-shadow: var(--btn-portfolio-shadow);
+    transform: scale(1.1);
+  }
+}
