@@ -73,7 +73,7 @@
   gap: 30px;
 }
 
-.social__link, .menu, .clients__link, .benefits__card, .modal__btn-close, .mob-menu__close {
+.social__link, .menu, .clients__link, .benefits__card, .modal__btn-close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,75 +169,6 @@ img {
 body {
   font-family: Roboto, sans-serif;
   background: var(--background-white);
-}
-
-.mob-menu__close {
-  position: absolute;
-  top: 21px;
-  right: 21px;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  background-color: transparent;
-  padding: 0;
-}
-
-.mob-menu {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  padding: 48px 40px;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--background-white);
-}
-
-.mob-menu__link {
-  display: block;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
-  letter-spacing: 0.02em;
-  color: var(--first-gray);
-}
-
-.mob-menu__item:not(:last-child) {
-  margin-bottom: 32px;
-}
-
-.mob-menu__list {
-  margin-bottom: 306px;
-}
-
-.mob-menu__contact-link:first-child {
-  display: block;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.176;
-  letter-spacing: 0.02em;
-  color: var(--effect-color);
-}
-
-.mob-menu__contact-link:last-child {
-  display: block;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.167;
-  letter-spacing: 0.02em;
-  color: var(--gray-light);
-}
-
-.mob-menu__contact {
-  margin-bottom: 64px;
-}
-
-.mob-menu__soc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
 }
 
 .backdrop {

@@ -8,9 +8,8 @@
      padding: 0;
      width: 40px;
      height: 40px;
-     border: 1px solid rgba(0, 0, 0, 0.1);
-     border-radius: 50%;
      background-color: transparent;
+     outline: none;
      padding: 0;
  }
 
@@ -35,7 +34,14 @@
 .mob-menu__link{
 display: block;
 @include font(500, 40, 1.175, 0.02);
- color: var(--first-gray);}
+ color: var(--first-gray);
+&:hover,
+    &:focus {
+        color: var(--effect-color);
+    }}
+        .mob-menu__link--current{
+        color: var(--effect-color);
+        }
 
  .mob-menu__item:not(:last-child) {
      margin-bottom: 32px;
@@ -43,26 +49,36 @@ display: block;
  .mob-menu__list {
      margin-bottom: 306px;
  }
- .mob-menu__contact-link:first-child{
+ .mob-menu__contact-link-tel{
     display: block;
     @include font(500, 34, 1.176, 0.02);
     color: var(--effect-color);
  }
 
-.mob-menu__contact-link:last-child{
+.mob-menu__contact-link-mail{
     display: block;
 @include font(500, 24, 1.167, 0.02);
- color: var(--gray-light);}
+ color: var(--gray-light);
+}
 
- .mob-menu__contact{
-    margin-bottom: 64px;
-
- }
+.mob-menu__contact-item:last-child{
+margin-top: 32px;
+margin-bottom: 64px;
+}
 
  .mob-menu__soc{
 display: flex;
 
 gap: 20px;
+}
+
+.mob-menu__close-icon {
+    transition: fill var(--timing);
+
+    .mob-menu__close:hover &,
+    .mob-menu__close:focus & {
+        fill: var(--effect-color);
+    }
 }
 
 
