@@ -3,47 +3,56 @@
   padding: 118px 0;
   max-width: 1600px;
   height: 400px;
-  
-    margin-left: auto;
-    margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero_mob.jpg);
-    
+
+  margin-left: auto;
+  margin-right: auto;
   background-position: center;
   background-size: cover;
-@media screen and (min-width: 480px){
- 
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/hero_tab.jpg);
-}
-@media screen and (min-width: 768px) {
-background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero_img.jpg);
-}
+  background-image: var(--gra),
+    url(../images/hero_mob.jpg);
 
-  @media screen and (min-width: 1200px){
+  @include retina {
+    background-image: var(--gra),
+      url(../images/hero_mob2.jpg);
+  }
+
+  @media screen and (min-width: 480px) {
+    background-image: var(--gra),
+      url(../images/hero_tab.jpg);
+   @include retina {
+      background-image: var(--gra),
+        url(../images/hero_tab2.jpg);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    background-image: var(--gra),
+      url(../images/hero_img.jpg);
+  @include retina {
+      background-image: var(--gra),
+        url(../images/hero_img2.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
     padding: 200px 0;
     height: 600px;
-    
-}}
+  }
+}
 
 .hero--container {
   // padding-left: 15px;
   // padding-right: 15px;
-    margin: 0 auto;
+  margin: 0 auto;
   text-align: center;
- 
 
- 
   @media screen and (min-width: 480px) {
-      max-width: 480px;
-    }
-        @media screen and (min-width: 768px) {
-          max-width: 768px;
-        }
-                 @media screen and (min-width: 1200px) {
-                   max-width: 1200px;
-                 }
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
 .hero__titel {
@@ -53,17 +62,14 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   margin-bottom: 30px;
   color: var(--titel-white);
 
-  @media screen and (min-width: 480px) and (max-width: 1199px){
-  width: 360px;
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    width: 360px;
   }
-  
 
   @media screen and (min-width: 1200px) {
     @include font(900, 44, 1.3636, 0.06);
     margin-bottom: 40px;
     width: 696px;
-
-    
   }
 }
 
