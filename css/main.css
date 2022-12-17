@@ -73,7 +73,7 @@
   gap: 30px;
 }
 
-.social__link, .menu, .clients__link, .benefits__card, .modal__btn-close {
+.social__link, .menu, .clients__link, .benefits__card, .modal__btn-close, .mob-menu__btn-close {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,6 +169,85 @@ img {
 body {
   font-family: Roboto, sans-serif;
   background: var(--background-white);
+}
+
+.mob-menu__btn-close {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+}
+
+.mob-menu {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--background-white);
+}
+
+.mob-menu__container {
+  padding: 48px 40px;
+  height: 100%;
+}
+
+.mob-menu__link {
+  display: block;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: var(--first-gray);
+}
+.mob-menu__link:hover, .mob-menu__link:focus {
+  color: var(--effect-color);
+}
+
+.mob-menu__link--current {
+  color: var(--effect-color);
+}
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mob-menu__contact-link--tel {
+  display: block;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.176;
+  letter-spacing: 0.02em;
+  color: var(--effect-color);
+}
+
+.mob-menu__contact-link--mail {
+  display: block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.167;
+  letter-spacing: 0.02em;
+  color: var(--gray-light);
+}
+
+.mob-menu__soc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.mob-menu__icon-close {
+  -webkit-transition: fill var(--timing);
+  transition: fill var(--timing);
+}
+.mob-menu__btn-close:hover .mob-menu__icon-close, .mob-menu__btn-close:focus .mob-menu__icon-close {
+  fill: var(--effect-color);
 }
 
 .backdrop {
@@ -1312,12 +1391,12 @@ body {
 }
 @media screen and (min-width: 480px) {
   .submit__input {
-    width: 450px;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
   .submit__input {
-    width: 358px;
+    max-width: 358px;
   }
 }
 

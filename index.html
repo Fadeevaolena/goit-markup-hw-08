@@ -162,19 +162,20 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/igor.jpg 1x, ./images/igor2.jpg 2x"
+                  srcset="./images/igor.jpg 1x, ./images/igor_2x.jpg 1x "
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./images/igor_tab.jpg 1x, ./images/igor_tab2.jpg 2x"
+                  srcset="./images/igor_tab.jpg 1x, ./images/igor_tab2.jpg 2x "
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./images/igor_mob.jpg 1x, ./images/igor_mob2.jpg 2x"
+                  srcset="./images/igor_mob.jpg 1x, ./images/igor_mob2x.jpg 2x"
                   media="(max-width: 767px)"
                 />
+                <img src="./images/igor_mob.jpg" width="450" alt="Ігор фото" />
               </picture>
-              <img src="./images/igor_mob.jpg" width="450" alt="Ігор фото" />
+              
               <div class="team__card">
                 <h3 class="team__uptitel">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -211,7 +212,13 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/olga.jpg" width="270" alt="Ольга фото" />
+              <picture>
+                <source srcset="./images/olga.jpg 1x, ./images/olga_2x.jpg 2x " 
+                media="(min-width: 1200px)" />
+                <source srcset="./images/olga_tab.jpg 1x, ./images/olga_tab2x.jpg 2x " media="(min-width: 768px)" />
+                <source srcset="./images/olga_mob.jpg 1x, ./images/olga_mob2x.jpg 2x " media="(max-width: 767px)" />
+                <img src="./images/olga_mob.jpg" width="450" alt="Ольга фото" />
+              </picture>
               <div class="team__card">
                 <h3 class="team__uptitel">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -248,7 +255,14 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/mykola.jpg" width="270" alt="Микола фото" />
+              <picture>
+                <source srcset="./images/mykola.jpg 1x, ./images/mykola_2x.jpg 2x" 
+                media="(min-width: 1200px)" />
+                <source srcset="./images/mykola_tab.jpg 1x, ./images/mykola_tab2x.jpg 2x "
+                 media="(min-width: 768px)" />
+                <source srcset="./images/mykola_mob.jpg 1x, ./images/mykola_mob2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/mykola_mob.jpg" width="450" alt="Микола фото" />
+              </picture>
               <div class="team__card">
                 <h3 class="team__uptitel">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -285,7 +299,12 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/mykhailo.jpg" width="270" alt="Михайло фото" />
+              <picture>
+                <source srcset="./images/mykhailo.jpg 1x, ./images/mykhailo_2x.jpg 2x  " media="(min-width: 1200px)" />
+                <source srcset="./images/myhailo_tab.jpg 1x,/images/myhailo_tab2x.jpg 2x " media="(min-width: 768px)" />
+                <source srcset="./images/myhailo_mob.jpg 1x, ./images/myhailo_mob2x.jpg 2x" media="(max-width: 767px)" />
+                <img src="./images/myhailo_mob.jpg" width="450" alt="Михайло фото" />
+              </picture>
               <div class="team__card">
                 <h3 class="team__uptitel">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -505,10 +524,10 @@
         </form>
       </div>
     </div>
-    <div class="mob-menu">
+    <div class="mob-menu ">
       <div class="mob-menu__container">
-      <button class="mob-menu__close">
-        <svg class="mob-menu__close-icon" width="40" height="40">
+      <button class="mob-menu__btn-close">
+        <svg class="mob-menu__icon-close" width="40" height="40">
           <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
         </svg>
       </button>
@@ -523,28 +542,30 @@
           <a class="mob-menu__link" href="#contacts">Контакти</a>
         </li>
       </ul>
+      <div class="contact-soc__container">
       <ul class="mob-menu__contact">
         <li class="mob-menu__contact-item">
-          <a class="mob-menu__contact-link-tel" href="tel:+380961111111"> +38 096 111 11 11</a>
+          <a class="mob-menu__contact-link--tel" href="tel:+380961111111"> +38 096 111 11 11</a>
         </li>
         <li class="mob-menu__contact-item">
-          <a class="mob-menu__contact-link-mail" href="mailto:info@devstudio.com"> info@devstudio.com</a>
+          <a class="mob-menu__contact-link--mail" href="mailto:info@devstudio.com"> info@devstudio.com</a>
         </li>
       </ul>
       <ul class="mob-menu__soc">
-        <li class="mob-menu__item-item">
-          <a class="soc__link" href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <li class="mob-menu__soc-item">
+          <a class="mob-menu__soc-link" href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
         </li>
-        <li class="mob-menu__item-item">
-          <a class="soc__link" href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+        <li class="mob-menu__soc-item">
+          <a class="mob-menu__soc-link" href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
         </li>
-        <li class="mob-menu__item-item">
-          <a class="soc__link" href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <li class="mob-menu__soc-item">
+          <a class="mob-menu__soc-link" href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
         </li>
-        <li class="mob-menu__item-item">
-          <a class="soc__link" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <li class="mob-menu__soc-item">
+          <a class="mob-menu__soc-link" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </li>
       </ul>
+      </div>
     </div>
     </div>
     <script src="./js/modal.js"></script>
