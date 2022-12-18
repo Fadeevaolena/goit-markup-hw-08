@@ -33,10 +33,10 @@
   transform: translateY(100%);
   transition: transform var(--timing);
 
-  // .gallery__item:hover &,
-  .gallery__item:focus &{
-  transform: translateY(0);
-  }
+  // // .gallery__item:hover &,
+  // .gallery__item:focus &{
+  // transform: translateY(0);
+  // }
 
   @media screen and (min-width: 1200px) {
     .gallery__link:hover &,

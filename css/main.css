@@ -637,10 +637,6 @@ body {
   transition: transform var(--timing);
   transition: transform var(--timing), -webkit-transform var(--timing);
 }
-.gallery__item:focus .gallery__overlay {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
 @media screen and (min-width: 1200px) {
   .gallery__link:hover .gallery__overlay, .gallery__link:focus .gallery__overlay {
     -webkit-transform: translateY(0);
