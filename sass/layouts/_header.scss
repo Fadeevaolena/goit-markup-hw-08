@@ -9,54 +9,39 @@
 }
 
 .header__nav-list {
-  // display: flex;
   display: none;
-  margin-right: auto;
-  gap: 50px;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     display: flex;
-      margin-right: auto;
-      gap: 50px;
-
-  }
-
-  @media screen and (min-width: 1200px) {
-  display: flex;
     margin-right: auto;
     gap: 50px;
-    
   }
 }
 
 .header__contact-list {
-  
   display: none;
-  margin-left: auto;
-  // gap: 50px;
 
-  @media screen and (min-width: 768px){
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+    gap: 10px;
   }
 
-  @media screen and (min-width: 1200px){
-    display: flex;
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
-    margin-left: auto;
     gap: 50px;
   }
 }
 
 .header__logo {
   @include font(700, 24, 1.174);
-    padding-top: 16px;
-    padding-bottom: 16px;
-    font-family: var(--font-Ral);
-    color: #000000;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  font-family: var(--font-Ral);
+  color: #000000;
 
-  @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     padding-top: 26px;
     padding-bottom: 26px;
     margin-right: 93px;
@@ -64,8 +49,8 @@
 
   @media screen and (min-width: 1200px) {
     @include font(700, 26, 1.1923);
-       padding-top: 24px;
-       padding-bottom: 25px;
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 
@@ -125,26 +110,33 @@
   &:focus {
     color: var(--effect-color);
   }
-  &:after {
-    @extend %after;
-    position: absolute;
-    display: inline-block;
-    background: var(--effect-color);
-    transform: scaleX(0);
-    transition: transform var(--timing);
-    transform-origin: left;
+
+  @media screen and (min-width: 1200px) {
+    @include font(500, 14, 1.1429, 0.02);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    &:after {
+      content: '';
+      bottom: 1px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      position: absolute;
+      display: inline-block;
+      background: var(--effect-color);
+      transform: scaleX(0);
+      transition: transform var(--timing);
+      transform-origin: left;
+    }
   }
+
   &:hover,
   &:focus {
     &:after {
       transform: scaleX(1);
     }
   }
-    @media screen and (min-width: 1200px){
-      @include font(500, 14, 1.1429, 0.02);
-        padding-top: 32px;
-        padding-bottom: 32px;
-    }
 }
 
 .contact-list__icon {
@@ -154,15 +146,4 @@
   &:hover,
   &:focus {
     color: var(--effect-color);
-  }
-}
-
-
-.mob-menu__open{
-  height: 40px;
-    width: 40px;
-  background-color: transparent;
-  margin-left: auto;
-  @media screen and (min-width: 768px) {
-    display: none;
     }}

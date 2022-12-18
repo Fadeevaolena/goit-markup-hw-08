@@ -129,7 +129,13 @@
           <ul class="work__list">
             <li class="work__item">
               <div class="work__card">
-                <img src="./images/photo1.jpg" width="370" alt="photo desk app" />
+                <picture>
+                  <source
+                    srcset="./images/deskapp.jpg 1x, ./images/deskapp2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/deskapp.jpg" width="370" alt="photo deskapp" />
+                </picture>
                 <div class="work__description">
                   <h3 class="work__uptitel">Десктопні додатки</h3>
                 </div>
@@ -137,7 +143,13 @@
             </li>
             <li class="work__item">
               <div class="work__card">
-                <img src="./images/photo2.jpg" width="370" alt="photo mob app" />
+                <picture>
+                  <source
+                    srcset="./images/mobapp.jpg 1x, ./images/mobapp2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/mobapp.jpg" width="370" alt="photo mobapp" />
+                </picture>
                 <div class="work__description">
                   <h3 class="work__uptitel">Мобільні додатки</h3>
                 </div>
@@ -145,7 +157,13 @@
             </li>
             <li class="work__item">
               <div class="work__card">
-                <img src="./images/photo3.jpg" width="370" alt="photo design" />
+                <picture>
+                  <source
+                    srcset="./images/design_work.jpg 1x, ./images/design_work2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/design_work.jpg" width="370" alt="photo design" />
+                </picture>
                 <div class="work__description">
                   <h3 class="work__uptitel">Дизайнерські рішення</h3>
                 </div>
@@ -156,17 +174,17 @@
       </section>
       <!-- Наша команда -->
       <section class="team section">
-        <div class="container team--container">
+        <div class="team--container">
           <h2 class="team__titel">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/igor.jpg 1x, ./images/igor_2x.jpg 1x "
+                  srcset="./images/igor.jpg 1x, ./images/igor_2x.jpg 1x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./images/igor_tab.jpg 1x, ./images/igor_tab2.jpg 2x "
+                  srcset="./images/igor_tab.jpg 1x, ./images/igor_tab2.jpg 2x"
                   media="(min-width: 768px)"
                 />
                 <source
@@ -175,7 +193,7 @@
                 />
                 <img src="./images/igor_mob.jpg" width="450" alt="Ігор фото" />
               </picture>
-              
+
               <div class="team__card">
                 <h3 class="team__uptitel">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -213,10 +231,18 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/olga.jpg 1x, ./images/olga_2x.jpg 2x " 
-                media="(min-width: 1200px)" />
-                <source srcset="./images/olga_tab.jpg 1x, ./images/olga_tab2x.jpg 2x " media="(min-width: 768px)" />
-                <source srcset="./images/olga_mob.jpg 1x, ./images/olga_mob2x.jpg 2x " media="(max-width: 767px)" />
+                <source
+                  srcset="./images/olga.jpg 1x, ./images/olga_2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/olga_tab.jpg 1x, ./images/olga_tab2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/olga_mob.jpg 1x, ./images/olga_mob2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
                 <img src="./images/olga_mob.jpg" width="450" alt="Ольга фото" />
               </picture>
               <div class="team__card">
@@ -256,11 +282,18 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/mykola.jpg 1x, ./images/mykola_2x.jpg 2x" 
-                media="(min-width: 1200px)" />
-                <source srcset="./images/mykola_tab.jpg 1x, ./images/mykola_tab2x.jpg 2x "
-                 media="(min-width: 768px)" />
-                <source srcset="./images/mykola_mob.jpg 1x, ./images/mykola_mob2x.jpg 2x" media="(max-width: 767px)" />
+                <source
+                  srcset="./images/mykola.jpg 1x, ./images/mykola_2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/mykola_tab.jpg 1x, ./images/mykola_tab2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/mykola_mob.jpg 1x, ./images/mykola_mob2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
                 <img src="./images/mykola_mob.jpg" width="450" alt="Микола фото" />
               </picture>
               <div class="team__card">
@@ -300,9 +333,18 @@
             </li>
             <li class="team__item">
               <picture>
-                <source srcset="./images/mykhailo.jpg 1x, ./images/mykhailo_2x.jpg 2x  " media="(min-width: 1200px)" />
-                <source srcset="./images/myhailo_tab.jpg 1x,/images/myhailo_tab2x.jpg 2x " media="(min-width: 768px)" />
-                <source srcset="./images/myhailo_mob.jpg 1x, ./images/myhailo_mob2x.jpg 2x" media="(max-width: 767px)" />
+                <source
+                  srcset="./images/mykhailo.jpg 1x, ./images/mykhailo_2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/myhailo_tab.jpg 1x, /images/myhailo_tab2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./images/myhailo_mob.jpg 1x, ./images/myhailo_mob2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
                 <img src="./images/myhailo_mob.jpg" width="450" alt="Михайло фото" />
               </picture>
               <div class="team__card">
@@ -517,10 +559,10 @@
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </span>
-            <div class="modal-form__link-wrapper">
-            Погоджуюся з розсилкою та приймаю &nbsp;
-            <a class="modal-form__check-link" href="#">Умови договору</a>
-            </div>
+            <span class="modal-form__link-wrapper">
+              Погоджуюся з розсилкою та приймаю &nbsp;
+              <a class="modal-form__check-link" href="#">Умови договору</a>
+            </span>
           </label>
           <button type="submit" class="modal-form__btn">Відправити</button>
         </form>
@@ -528,46 +570,56 @@
     </div>
     <div class="mob-menu is-hidden" data-menu>
       <div class="mob-menu__container">
-      <button class="mob-menu__btn-close" data-menu-close>
-        <svg class="mob-menu__icon-close" width="20" height="20">
-          <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
-        </svg>
-      </button>
-      <ul class="mob-menu__list">
-        <li class="mob-menu__item">
-          <a class="mob-menu__link mob-menu__link--current" href="./index.html">Студія</a>
-        </li>
-        <li class="mob-menu__item">
-          <a class="mob-menu__link" href="./portfolio.html">Портфоліо</a>
-        </li>
-        <li class="mob-menu__item">
-          <a class="mob-menu__link" href="#contacts">Контакти</a>
-        </li>
-      </ul>
+        <button class="mob-menu__btn-close" data-menu-close>
+          <svg class="mob-menu__icon-close" width="19" height="19">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu__list">
+          <li class="mob-menu__item">
+            <a class="mob-menu__link mob-menu__link--current" href="./index.html">Студія</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="./portfolio.html">Портфоліо</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link" href="#contacts">Контакти</a>
+          </li>
+        </ul>
       </div>
       <div class="contact-soc__container">
-      <ul class="mob-menu__contact">
-        <li class="mob-menu__contact-item">
-          <a class="mob-menu__contact-link--tel" href="tel:+380961111111"> +38 096 111 11 11</a>
-        </li>
-        <li class="mob-menu__contact-item">
-          <a class="mob-menu__contact-link--mail" href="mailto:info@devstudio.com"> info@devstudio.com</a>
-        </li>
-      </ul>
-      <ul class="mob-menu__soc">
-        <li class="mob-menu__soc-item">
-          <a class="mob-menu__soc-link" href="#" target="_blank" rel="noopener noreferrer">Instagram</a>
-        </li>
-        <li class="mob-menu__soc-item">
-          <a class="mob-menu__soc-link" href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
-        </li>
-        <li class="mob-menu__soc-item">
-          <a class="mob-menu__soc-link" href="#" target="_blank" rel="noopener noreferrer">Facebook</a>
-        </li>
-        <li class="mob-menu__soc-item">
-          <a class="mob-menu__soc-link" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </li>
-      </ul>
+        <ul class="mob-menu__contact">
+          <li class="mob-menu__contact-item">
+            <a class="mob-menu__contact-link--tel" href="tel:+380961111111"> +38 096 111 11 11</a>
+          </li>
+          <li class="mob-menu__contact-item">
+            <a class="mob-menu__contact-link--mail" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mob-menu__soc">
+          <li class="mob-menu__soc-item">
+            <a class="mob-menu__soc-link" href="#" target="_blank" rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li class="mob-menu__soc-item">
+            <a class="mob-menu__soc-link" href="#" target="_blank" rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+          <li class="mob-menu__soc-item">
+            <a class="mob-menu__soc-link" href="#" target="_blank" rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li class="mob-menu__soc-item">
+            <a class="mob-menu__soc-link" href="#" target="_blank" rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
       </div>
     </div>
     <script src="./js/modal.js"></script>

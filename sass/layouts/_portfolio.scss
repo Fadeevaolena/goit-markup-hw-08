@@ -1,10 +1,9 @@
-.gallery{
+.gallery {
   @extend %section;
-  
 }
 
-.gallery--container{
-@extend %container;
+.gallery--container {
+  @extend %container;
 }
 .gallery__titel {
   @extend %hidden;
@@ -17,24 +16,21 @@
   row-gap: 15px;
 
   @media screen and (min-width: 768px) {
-  display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
   }
-  }
+}
 
 .gallery__menu {
   margin-bottom: 40px;
-  @media screen and (min-width: 768px){
-  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
   }
-    @media screen and (min-width: 768px){
+  @media screen and (min-width: 768px) {
     margin-bottom: 50px;
-}}
-
-// .menu__item:not(:last-child) {
-//   margin-right: 8px;
-// }
+  }
+}
 
 .menu__btn {
   @include font(500, 16, 1.625);

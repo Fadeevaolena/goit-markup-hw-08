@@ -18,22 +18,16 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 90%;
+  width: 95vw;
   max-width: 450px;
   min-height: 609px;
   padding: 40px;
   background-color: var(--background-white);
   border-radius: 4px;
   box-shadow: var(--modal-shadow);
-  // transform: translate(-50%, -40vh) scale(1);
+  // transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -45vh) scale(1);
   transition: transform var(--timing), scale var(--timing);
-
-    
-
-@media screen and (min-width: 768px){
-  
-  transform: translate(-50%, -50%) scale(1);
-}
 
   @media screen and (min-width: 1200px) {
     max-width: 528px;
@@ -41,7 +35,8 @@
   }
 
   .backdrop.is-hidden & {
-    transform: translate(-50%, -50%) scale(0);
+    // transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -45vh) scale(0);
   }
 }
 
@@ -127,7 +122,6 @@
   width: 100%;
   max-width: 370px;
   min-height: 120px;
-  // height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   outline: transparent;
   border-radius: 4px;
@@ -165,10 +159,7 @@
 .modal-form__check {
   @extend %hidden;
 }
-.modal-form__link-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
+
 .modal-form__check-link {
   position: relative;
   display: inline-block;
@@ -215,8 +206,8 @@
   @extend %btn-primary;
   display: block;
   width: 100%;
-    max-width: 200px;
-    margin: 0 auto;
+  max-width: 200px;
+  margin: 0 auto;
   // min-width: 200px;
 
   margin-top: 30px;

@@ -1,45 +1,52 @@
-.mob-menu__btn-close {
-  @extend %flex-cent;
-  position: absolute;
-  top: 21px;
-  right: 25px;
-  padding: 0;
-  width: 40px;
+.mob-menu__open {
   height: 40px;
+  width: 40px;
   background-color: transparent;
-  outline: none;
-  padding: 0;
-}
-
-.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
-.mob-menu {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  padding: 48px 40px;
   margin-left: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--background-white);
-  overflow: auto;
-
-  transition: transform var(--timing);
 
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
+.mob-menu__btn-close {
+  @extend %flex-cent;
+  position: absolute;
+  top: 21px;
+  right: 25px;
+  padding: 0;
+  // width: 40px;
+  // height: 40px;
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.mob-menu {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  // margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--background-white);
+  overflow: auto;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
 
 .contact-soc__container {
-
   margin-top: auto;
 }
 
@@ -59,17 +66,13 @@
 .mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
-//  .mob-menu__list {
-//      margin-bottom: 306px;
-//  }
+
 .mob-menu__contact-link--tel {
-  display: block;
   @include font(500, 34, 1.176, 0.02);
   color: var(--effect-color);
 }
 
 .mob-menu__contact-link--mail {
-  display: block;
   @include font(500, 24, 1.167, 0.02);
   color: var(--gray-light);
 }

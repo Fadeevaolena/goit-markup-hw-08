@@ -7,28 +7,22 @@
   margin-right: auto;
   background-position: center;
   background-size: cover;
-  background-image: var(--gra),
-    url(../images/hero_mob.jpg);
+  background-image: var(--gra), url(../images/hero_mob.jpg);
 
   @include retina {
-    background-image: var(--gra),
-      url(../images/hero_mob2.jpg);
+    background-image: var(--gra), url(../images/hero_mob2.jpg);
   }
 
   @media screen and (min-width: 480px) {
-    background-image: var(--gra),
-      url(../images/hero_tab.jpg);
-   @include retina {
-      background-image: var(--gra),
-        url(../images/hero_tab2.jpg);
+    background-image: var(--gra), url(../images/hero_tab.jpg);
+    @include retina {
+      background-image: var(--gra), url(../images/hero_tab2.jpg);
     }
   }
   @media screen and (min-width: 768px) {
-    background-image: var(--gra),
-      url(../images/hero_img.jpg);
-  @include retina {
-      background-image: var(--gra),
-        url(../images/hero_img2.jpg);
+    background-image: var(--gra), url(../images/hero_img.jpg);
+    @include retina {
+      background-image: var(--gra), url(../images/hero_img2.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
@@ -62,8 +56,8 @@
   margin-bottom: 30px;
   color: var(--titel-white);
 
-  @media screen and (min-width: 480px) 
-  {    width: 350px;
+  @media screen and (min-width: 480px) {
+    width: 350px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -104,7 +98,7 @@
   &:after {
     position: absolute;
     top: 50%;
-    left: 25px;
+    left: 20px;
     content: '';
     display: inline-block;
     width: 20px;
