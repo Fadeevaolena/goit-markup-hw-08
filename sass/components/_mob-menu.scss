@@ -39,7 +39,6 @@
   justify-content: space-between;
   background-color: var(--background-white);
   overflow: auto;
-  transition: 500ms ease-in-out;
 
   @media screen and (min-width: 768px) {
     display: none;
