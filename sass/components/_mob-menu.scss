@@ -40,12 +40,17 @@
   justify-content: space-between;
   background-color: var(--background-white);
   overflow: auto;
+  transform: translateX(0);
+  transition: 500ms ease-in-out;
 
   @media screen and (min-width: 768px) {
     display: none;
   }
 }
 
+.mob-menu .is-hidden{
+  transform: translateX(-wv);
+}
 .contact-soc__container {
   margin-top: auto;
 }
