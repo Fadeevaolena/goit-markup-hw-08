@@ -1,14 +1,40 @@
-.menu {
-  @extend %wlex-cent;
+.gallery{
+  @extend %section;
+  
 }
+
+.gallery--container{
+@extend %container;
+}
+.gallery__titel {
+  @extend %hidden;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 8px;
+  row-gap: 15px;
+
+  @media screen and (min-width: 768px) {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  }
 
 .gallery__menu {
-  margin-bottom: 50px;
-}
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px){
+  margin-bottom: 30px;
+  }
+    @media screen and (min-width: 768px){
+    margin-bottom: 50px;
+}}
 
-.menu__item:not(:last-child) {
-  margin-right: 8px;
-}
+// .menu__item:not(:last-child) {
+//   margin-right: 8px;
+// }
 
 .menu__btn {
   @include font(500, 16, 1.625);

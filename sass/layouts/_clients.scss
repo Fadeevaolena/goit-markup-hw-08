@@ -1,25 +1,24 @@
-.clients{
+.clients {
   @extend %section;
 }
 
-.clients--container{
+.clients--container {
   @extend %container;
 }
 
 .clients__titel {
-      @include font(null, 28, 1.172);
-        text-align: center;
-        color: var(--first-gray);
-        margin-bottom: 30px;
-      
-      
-        @media screen and (min-width: 1200px) {
-          @include font(null, 36, 1.166);
-          text-align: center;
-          color: var(--first-gray);
-          margin-bottom: 50px;
-        }
-      }
+  @include font(null, 28, 1.172);
+  text-align: center;
+  color: var(--first-gray);
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    @include font(null, 36, 1.166);
+    text-align: center;
+    color: var(--first-gray);
+    margin-bottom: 50px;
+  }
+}
 
 .clients__list {
   @extend %list;
@@ -30,21 +29,20 @@
 .clients__item {
   width: 100%;
   @media screen and (max-width: 767px) {
-      flex-basis: calc((100% - 2 * 15px) / 2);
-    }
-  
-    @media screen and (min-width: 768px) {
-      flex-basis: calc((100% - 4 * 15px) / 3);
-    }
+    flex-basis: calc((100% - 2 * 15px) / 2);
+  }
 
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 4 * 15px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
     flex-basis: calc((100% - 10 * 15px) / 6);
-    }
-  
+  }
 }
 
 .clients__link {
-  @extend %wlex-cent;
+  @extend %flex-cent;
   width: 100%;
   height: 100%;
   border: 1px solid #afb1b8;

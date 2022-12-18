@@ -3,24 +3,23 @@
   @extend %section;
 }
 
-.team--container{
+.team--container {
   @extend %container;
 }
 
-.team__titel { 
-      @include font(null, 28, 1.172);
-      text-align: center;
-      color: var(--first-gray);
-      margin-bottom: 30px;
-
+.team__titel {
+  @include font(null, 28, 1.172);
+  text-align: center;
+  color: var(--first-gray);
+  margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
     @include font(null, 36, 1.166);
     text-align: center;
     color: var(--first-gray);
     margin-bottom: 50px;
-    }
   }
+}
 
 .team__list {
   @extend %list;
@@ -30,12 +29,12 @@
 .team__item {
   max-width: 100%;
   @media screen and (min-width: 768px) {
-      flex-basis: calc((100% - 30px) / 2);
-    }
-  
-    @media screen and (min-width: 1200px) {
-      flex-basis: calc((100% - 90px) / 4);
-    }
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .team__card {

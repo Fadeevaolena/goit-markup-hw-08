@@ -6,7 +6,7 @@
   @extend %container;
 }
 
-.benefits_titel {
+.benefits__titel {
   @extend %hidden;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .benefits__card {
-  @extend %wlex-cent;
+  @extend %flex-cent;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;

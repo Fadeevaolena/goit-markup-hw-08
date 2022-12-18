@@ -1,7 +1,6 @@
 .hero {
   background: var(--background-gray);
   padding: 118px 0;
-  max-width: 1600px;
   height: 400px;
 
   margin-left: auto;
@@ -35,6 +34,7 @@
   @media screen and (min-width: 1200px) {
     padding: 200px 0;
     height: 600px;
+    max-width: 1600px;
   }
 }
 
@@ -56,14 +56,14 @@
 }
 
 .hero__titel {
-  @include font(900, 26, 1.6154, 0.06);
+  @include font(900, 26, 1.615, 0.06);
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 30px;
   color: var(--titel-white);
 
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    width: 360px;
+  @media screen and (min-width: 480px) 
+  {    width: 350px;
   }
 
   @media screen and (min-width: 1200px) {

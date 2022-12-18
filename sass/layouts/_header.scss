@@ -13,13 +13,40 @@
   display: none;
   margin-right: auto;
   gap: 50px;
+
+  @media screen and (min-width: 768px){
+    display: flex;
+      margin-right: auto;
+      gap: 50px;
+
+  }
+
+  @media screen and (min-width: 1200px) {
+  display: flex;
+    margin-right: auto;
+    gap: 50px;
+    
+  }
 }
 
 .header__contact-list {
-  // display: flex;
+  
   display: none;
   margin-left: auto;
-  gap: 50px;
+  // gap: 50px;
+
+  @media screen and (min-width: 768px){
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px){
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    gap: 50px;
+  }
 }
 
 .header__logo {
@@ -28,7 +55,6 @@
     padding-bottom: 16px;
     font-family: var(--font-Ral);
     color: #000000;
-  // margin-right: 93px;
 
   @media screen and (min-width: 768px){
     padding-top: 26px;
@@ -89,7 +115,7 @@
 }
 
 .contact-list__link {
-  @extend %link;
+  @include font(500, 12, 1.166, 0.02);
   position: relative;
   color: var(--gray-light);
   display: flex;
@@ -114,6 +140,11 @@
       transform: scaleX(1);
     }
   }
+    @media screen and (min-width: 1200px){
+      @include font(500, 14, 1.1429, 0.02);
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
 }
 
 .contact-list__icon {
