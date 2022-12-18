@@ -15,8 +15,8 @@
   top: 21px;
   right: 25px;
   padding: 0;
-  // width: 40px;
-  // height: 40px;
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   outline: none;
   padding: 0;
@@ -34,13 +34,11 @@
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
-  // margin-left: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--background-white);
   overflow: auto;
-  transform: translateX(0);
   transition: 500ms ease-in-out;
 
   @media screen and (min-width: 768px) {
@@ -48,9 +46,6 @@
   }
 }
 
-.mob-menu .is-hidden{
-  transform: translateX(-wv);
-}
 .contact-soc__container {
   margin-top: auto;
 }

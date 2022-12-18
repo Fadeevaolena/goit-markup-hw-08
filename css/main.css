@@ -166,7 +166,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  width: 100%;
 }
 
 body {
@@ -191,6 +190,8 @@ body {
   top: 21px;
   right: 25px;
   padding: 0;
+  width: 40px;
+  height: 40px;
   background-color: transparent;
   outline: none;
   padding: 0;
@@ -221,8 +222,6 @@ body {
           justify-content: space-between;
   background-color: var(--background-white);
   overflow: auto;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
   -webkit-transition: 500ms ease-in-out;
   transition: 500ms ease-in-out;
 }
@@ -230,11 +229,6 @@ body {
   .mob-menu {
     display: none;
   }
-}
-
-.mob-menu .is-hidden {
-  -webkit-transform: translateX(-wv);
-          transform: translateX(-wv);
 }
 
 .contact-soc__container {
@@ -643,6 +637,10 @@ body {
   transition: transform var(--timing);
   transition: transform var(--timing), -webkit-transform var(--timing);
 }
+.gallery__item:focus .gallery__overlay {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
 @media screen and (min-width: 1200px) {
   .gallery__link:hover .gallery__overlay, .gallery__link:focus .gallery__overlay {
     -webkit-transform: translateY(0);
@@ -679,7 +677,7 @@ body {
   border-bottom: 1px solid #eeeeee;
 }
 
-.gallery__subtitel {
+.gallery__uptitel {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -962,7 +960,6 @@ body {
   .hero {
     padding: 200px 0;
     height: 600px;
-    max-width: 1600px;
   }
 }
 
@@ -982,7 +979,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero--container {
-    max-width: 1200px;
+    max-width: 1600px;
   }
 }
 
