@@ -33,23 +33,35 @@
   transform: translateY(100%);
   transition: transform var(--timing);
 
-  // .gallery__item:hover &,
-  // .gallery__item:focus &{
-  // transform: translateY(0);
-  // }
+  .gallery__link:focus &,
+  .gallery__link:active & {
+    transform: translateY(0);
+  }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     .gallery__link:hover &,
     .gallery__link:focus & {
       transform: translateY(0);
-    }}
-    
-  &-text {
-    @include font(400, 18, 1.5555);
-    padding: 63px 24px;
-    color: var(--titel-white);
-  }}
+    }
+  }
 
+  &-text {
+    @include font(400, 14, 1.625);
+    color: var(--titel-white);
+    padding: 24px;
+
+    @media screen and (min-width: 480px) {
+      @include font(400, 18, 1.5555);
+      padding: 77px 24px 105px 24px;
+    }
+    @media screen and (min-width: 768px) {
+      padding: 49px 24px 105px 24px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding: 63px 24px 91px 24px;
+    }
+  }
+}
 
 .gallery__link {
   display: flex;
