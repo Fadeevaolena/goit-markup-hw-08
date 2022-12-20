@@ -174,8 +174,7 @@ body {
 }
 
 .mob-menu__open {
-  height: 40px;
-  width: 40px;
+  padding: 0;
   background-color: transparent;
   margin-left: auto;
 }
